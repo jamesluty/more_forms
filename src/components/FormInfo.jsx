@@ -59,27 +59,27 @@ const FormInfo = () => {
             <form className={styles.column} onSubmit={createUser}>
                 <div className={styles.inputs}>
                     <label htmlFor="firstName">First Name</label>
-                    <input type="text" onChange={  (input) => setFirstName(input.target.value) }/>
+                    <input type="text" onChange={(input) => setFirstName(input.target.value)} value={firstName}/>
                 </div>
                 <p className={styles.alert}>{ validateFirstName() ? "" : "First name required!" }</p>
                 <div className={styles.inputs}>
                     <label htmlFor="lastName">Last Name</label>
-                    <input type="text" onChange={ (input) => setLastName(input.target.value) }/>
+                    <input type="text" onChange={(input) => setLastName(input.target.value)} value={lastName}/>
                 </div>
                 <p className={styles.alert}>{ validateLastName() ? "" : "Last name required!" }</p>
                 <div className={styles.inputs}>
                     <label htmlFor="email">Email</label>
-                    <input type="text" onChange={ (input) => setEmail(input.target.value) }/>
+                    <input type="text" onChange={(input) => setEmail(input.target.value)} value={email}/>
                 </div>
                 <p className={styles.alert}>{ validateEmail() ? "" : "Email required!" }</p>
                 <div className={styles.inputs}>
                     <label htmlFor="password">Password</label>
-                    <input type="text" onChange={ (input) => setPassword(input.target.value) }/>
+                    <input type="text" onChange={(input) => setPassword(input.target.value)} value={password}/>
                 </div>
                 <p className={styles.alert}>{ validatePassword() ? "" : "Password required!" }</p>
                 <div className={styles.inputs}>
                     <label htmlFor="confirmPassword">Confirm Password</label>
-                    <input type="text" onChange={ (input) => setConfirmPassword(input.target.value) }/>
+                    <input type="text" onChange={(input) => setConfirmPassword(input.target.value)} value={confirmPassword}/>
                 </div>
                 <p className={styles.alert}>{ validateConfirmPassword() ? "" : "Confirm password required!" }</p>
                 <input className={styles.submit} type="submit" value="Create User"/>
