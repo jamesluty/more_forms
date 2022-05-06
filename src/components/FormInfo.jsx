@@ -15,7 +15,7 @@ const FormInfo = () => {
     };
 
     const validateFirstName = () => {
-        if (firstName.length < 1){
+        if (firstName.length < 2 && firstName.length > 0){
             return false
         } else {
             return true
@@ -23,7 +23,7 @@ const FormInfo = () => {
     }
 
     const validateLastName = () => {
-        if (lastName.length < 1){
+        if (lastName.length < 2 && lastName.length > 0){
             return false
         } else {
             return true
@@ -31,7 +31,7 @@ const FormInfo = () => {
     }
 
     const validateEmail = () => {
-        if (email.length < 1){
+        if (email.length < 2 && email.length > 0){
             return false
         } else {
             return true
@@ -39,7 +39,7 @@ const FormInfo = () => {
     }
 
     const validatePassword = () => {
-        if (password.length < 1){
+        if (password.length < 2 && password.length > 0){
             return false
         } else {
             return true
@@ -47,7 +47,7 @@ const FormInfo = () => {
     }
 
     const validateConfirmPassword = () => {
-        if (confirmPassword.length < 1){
+        if (confirmPassword.length < 2 && confirmPassword.length > 0){
             return false
         } else {
             return true
